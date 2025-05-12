@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Islamic Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .question {
+      margin: 20px 0;
+    }
+    .question h3 {
+      margin-bottom: 10px;
+    }
+    .question label {
+      display: block;
+      margin: 5px 0;
+    }
+    #submit {
+      display: block;
+      margin: 30px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    #result {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .credit {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      color: #555;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Islamic Quiz</h1>
+    <form id="quizForm">
+
+      <!-- Start Questions -->
+      <div class="question" id="q1">
+        <h3>1. What is the first pillar of Islam?</h3>
+        <label><input type="radio" name="q1" value="a"> Salah</label>
+        <label><input type="radio" name="q1" value="b"> Shahada</label>
+        <label><input type="radio" name="q1" value="c"> Sawm</label>
+      </div>
+
+      <div class="question" id="q2">
+        <h3>2. How many times do Muslims pray in a day?</h3>
+        <label><input type="radio" name="q2" value="a"> 3</label>
+        <label><input type="radio" name="q2" value="b"> 5</label>
+        <label><input type="radio" name="q2" value="c"> 7</label>
+      </div>
+
+      <div class="question" id="q3">
+        <h3>3. In which month is fasting observed?</h3>
+        <label><input type="radio" name="q3" value="a"> Muharram</label>
+        <label><input type="radio" name="q3" value="b"> Ramadan</label>
+        <label><input type="radio" name="q3" value="c"> Dhul-Hijjah</label>
+      </div>
+
+      <div class="question" id="q4">
+        <h3>4. How many chapters (Surahs) are in the Quran?</h3>
+        <label><input type="radio" name="q4" value="a"> 114</label>
+        <label><input type="radio" name="q4" value="b"> 110</label>
+        <label><input type="radio" name="q4" value="c"> 100</label>
+      </div>
+
+      <div class="question" id="q5">
+        <h3>5. Who was the last Prophet in Islam?</h3>
+        <label><input type="radio" name="q5" value="a"> Prophet Isa (A.S)</label>
+        <label><input type="radio" name="q5" value="b"> Prophet Musa (A.S)</label>
+        <label><input type="radio" name="q5" value="c"> Prophet Muhammad (PBUH)</label>
+      </div>
+
+      <div class="question" id="q6">
+        <h3>6. Which angel brought revelation to the Prophets?</h3>
+        <label><input type="radio" name="q6" value="a"> Jibrael (A.S)</label>
+        <label><input type="radio" name="q6" value="b"> Israfeel (A.S)</label>
+        <label><input type="radio" name="q6" value="c"> Mikail (A.S)</label>
+      </div>
+
+      <div class="question" id="q7">
+        <h3>7. What is the Islamic holy book called?</h3>
+        <label><input type="radio" name="q7" value="a"> Bible</label>
+        <label><input type="radio" name="q7" value="b"> Torah</label>
+        <label><input type="radio" name="q7" value="c"> Quran</label>
+      </div>
+
+      <div class="question" id="q8">
+        <h3>8. What is Zakat?</h3>
+        <label><input type="radio" name="q8" value="a"> Fasting</label>
+        <label><input type="radio" name="q8" value="b"> Charity</label>
+        <label><input type="radio" name="q8" value="c"> Prayer</label>
+      </div>
+
+      <div class="question" id="q9">
+        <h3>9. What city do Muslims face during prayer?</h3>
+        <label><input type="radio" name="q9" value="a"> Madinah</label>
+        <label><input type="radio" name="q9" value="b"> Makkah</label>
+        <label><input type="radio" name="q9" value="c"> Jerusalem</label>
+      </div>
+
+      <div class="question" id="q10">
+        <h3>10. What does “Islam” mean?</h3>
+        <label><input type="radio" name="q10" value="a"> Peace</label>
+        <label><input type="radio" name="q10" value="b"> Submission</label>
+        <label><input type="radio" name="q10" value="c"> Both</label>
+      </div>
+
+      <div class="question" id="q11">
+        <h3>11. Who built the Kaaba?</h3>
+        <label><input type="radio" name="q11" value="a"> Prophet Muhammad (PBUH)</label>
+        <label><input type="radio" name="q11" value="b"> Prophet Ibrahim (A.S) and Ismail (A.S)</label>
+        <label><input type="radio" name="q11" value="c"> Caliph Umar</label>
+      </div>
+
+      <div class="question" id="q12">
+        <h3>12. What is the night of power called in Ramadan?</h3>
+        <label><input type="radio" name="q12" value="a"> Lailatul Qadr</label>
+        <label><input type="radio" name="q12" value="b"> Eid Night</label>
+        <label><input type="radio" name="q12" value="c"> Shab-e-Miraj</label>
+      </div>
+
+      <div class="question" id="q13">
+        <h3>13. What is the meaning of “Quran”?</h3>
+        <label><input type="radio" name="q13" value="a"> Book</label>
+        <label><input type="radio" name="q13" value="b"> Recitation</label>
+        <label><input type="radio" name="q13" value="c"> Message</label>
+      </div>
+
+      <div class="question" id="q14">
+        <h3>14. How many Rakats are in Fajr prayer?</h3>
+        <label><input type="radio" name="q14" value="a"> 4</label>
+        <label><input type="radio" name="q14" value="b"> 3</label>
+        <label><input type="radio" name="q14" value="c"> 2</label>
+      </div>
+
+      <div class="question" id="q15">
+        <h3>15. What is Hajj?</h3>
+        <label><input type="radio" name="q15" value="a"> Islamic fast</label>
+        <label><input type="radio" name="q15" value="b"> Pilgrimage to Makkah</label>
+        <label><input type="radio" name="q15" value="c"> Prayer after Fajr</label>
+      </div>
+
+      <div class="question" id="q16">
+        <h3>16. Which Surah is the longest in the Quran?</h3>
+        <label><input type="radio" name="q16" value="a"> Surah Al-Fatiha</label>
+        <label><input type="radio" name="q16" value="b"> Surah Al-Baqarah</label>
+        <label><input type="radio" name="q16" value="c"> Surah Yasin</label>
+      </div>
+
+      <div class="question" id="q17">
+        <h3>17. What is the Islamic calendar based on?</h3>
+        <label><input type="radio" name="q17" value="a"> Solar year</label>
+        <label><input type="radio" name="q17" value="b"> Lunar year</label>
+        <label><input type="radio" name="q17" value="c"> Both</label>
+      </div>
+
+      <div class="question" id="q18">
+        <h3>18. Who split the sea by Allah's will?</h3>
+        <label><input type="radio" name="q18" value="a"> Prophet Isa (A.S)</label>
+        <label><input type="radio" name="q18" value="b"> Prophet Musa (A.S)</label>
+        <label><input type="radio" name="q18" value="c"> Prophet Nuh (A.S)</label>
+      </div>
+
+      <div class="question" id="q19">
+        <h3>19. What is the second largest religion in the world?</h3>
+        <label><input type="radio" name="q19" value="a"> Islam</label>
+        <label><input type="radio" name="q19" value="b"> Christianity</label>
+        <label><input type="radio" name="q19" value="c"> Hinduism</label>
+      </div>
+
+      <div class="question" id="q20">
+        <h3>20. What was the first word revealed to the Prophet Muhammad (PBUH)?</h3>
+        <label><input type="radio" name="q20" value="a"> Read (Iqra)</label>
+        <label><input type="radio" name="q20" value="b"> Pray</label>
+        <label><input type="radio" name="q20" value="c"> Believe</label>
+      </div>
+      <!-- End Questions -->
+
+      <button type="button" id="submit">Submit</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <div class="credit">Created by Abuzar Kha</div>
+
+  <script>
+    const correctAnswers = {
+      q1: 'b',
+      q2: 'b',
+      q3: 'b',
+      q4: 'a',
+      q5: 'c',
+      q6: 'a',
+      q7: 'c',
+      q8: 'b',
+      q9: 'b',
+      q10: 'c',
+      q11: 'b',
+      q12: 'a',
+      q13: 'b',
+      q14: 'c',
+      q15: 'b',
+      q16: 'b',
+      q17: 'b',
+      q18: 'b',
+      q19: 'a',
+      q20: 'a'
+    };
+
+    document.getElementById('submit').onclick = function () {
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let q in correctAnswers) {
+        let radios = document.getElementsByName(q);
+        for (let radio of radios) {
+          if (radio.checked && radio.value === correctAnswers[q]) {
+            score++;
+          }
+        }
+      }
+
+      document.getElementById('result').innerText = `You scored ${score} out of ${total}`;
+    };
+  </script>
+
+</body>
+</html>
